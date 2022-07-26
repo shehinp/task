@@ -1,0 +1,6 @@
+{% include 'user/base.html' %}
+    <a href="{% url 'addmasterlead' %}">Add Masterleads</a>
+    <a href="{% url 'actions' %}">View Actions</a>
+    <a href="{% url 'logout' %}">Logout</a>
+    {% block content %}
+    {% endblock %}

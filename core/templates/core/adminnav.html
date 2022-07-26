@@ -1,0 +1,9 @@
+<h1>Dashboard admin</h1>
+<br>Welcome {{profile.user.first_name}}<br>
+<br>
+
+<a href="{% url 'addteacher' %}">Add Teacher</a> 
+<a href="{% url 'addstudent' %}">Add Student</a> 
+<a href="{% url 'viewstudent' %}">View Student</a>  
+<a href="{% url 'assignteacher' %}">Assign</a>    
+<a href="{% url 'logout' %}">Logout</a>

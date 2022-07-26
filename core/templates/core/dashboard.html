@@ -1,0 +1,12 @@
+{% include 'user/base.html' %}
+
+    {% if profile.Usertype == "student" %}
+    {% include 'core/studentnav.html' %}
+    {% elif profile.Usertype == "admin"%}
+    {% include 'core/adminnav.html' %}
+    {% elif profile.Usertype == "teacher"%}
+    {% include 'core/teachernav.html' %}
+    {% else %}
+    <a href="{% url 'logout' %}">Logout</a>
+    {% endif %}
+

@@ -1,0 +1,28 @@
+{% include 'user/base.html' %}
+<form id="form1" name="form1" method="post" action="{% url 'assignteacher' %}">
+  {%csrf_token%}
+  <table width="300" border="0">
+    <tr>
+      <th scope="col">Student</th>
+      <th scope="col">Teacher</th>
+    </tr>
+    <tr>
+      <td><select name="student" id="select">
+        {% for i in student %}
+        <option value="{{ i.user }}">{{ i.user }}</input>
+          {% endfor %}
+    </select></td>
+      <td><select name="teacher" id="select">
+        {% for x in teacher %}
+        <option value="{{ x.user }}">{{ x.user }}</input>
+          {% endfor %}
+    </select></td>
+    <td><button>
+      SUBMIT
+    </button></td>
+    </tr>
+  </table>
+  </div>  
+</form>
+</table>
+</form>

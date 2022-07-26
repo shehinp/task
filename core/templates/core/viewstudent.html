@@ -1,0 +1,16 @@
+{% include 'user/base.html' %}
+<form id="form1" name="form1" method="post" action="{% url 'viewstudent' %}">
+  {%csrf_token%}
+  <table width="300" border="0">
+    <tr>
+      <th scope="col">STUDENTS</th>     
+    </tr>
+    {% for i in data %}
+    <tr>
+      <td>{{ i.user.get_full_name}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</form>
+</table>
+</form>

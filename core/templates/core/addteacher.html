@@ -1,0 +1,119 @@
+{% include 'user/base.html' %}
+<form id="form1" name="form1" method="post" action="{% url 'addteacher' %}" autocomplete="off">
+  {%csrf_token%}
+  <div class="limiter">
+    <div class="container-login100">
+      <div class="wrap-login100">
+        <form class="login100-form validate-form">
+          <span class="login100-form-title">
+            ADD USER
+          </span>
+          <table width="300" border="1">
+            <div class="wrap-input100 validate-input">
+              <input class="input100" type="text" name="fname" placeholder="FIRSTNAME">
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+              </span>
+            </div>
+            <div class="wrap-input100 validate-input">
+              <input class="input100" type="text" name="lname" placeholder="LASTNAME">
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+              </span>
+            </div>
+
+            
+            <!-- <tr>
+            <th scope="row">Gender</th>
+            <td><input type="radio" name="gender" id="male" value="male" />
+              <label for="male">Male
+                <input type="radio" name="gender" id="Female" value="Female" />
+                Female</label>
+            </td>
+          </tr> -->
+            <div class="wrap-input100 validate-input">
+              <input class="input100" type="date" name="dob" placeholder="DOB">
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+              </span>
+            </div>
+            <div class="wrap-input100 validate-input">
+              <input class="input100" type="text" name="place" placeholder="PLACE">
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </span>
+            </div>
+            <div class="wrap-input100 validate-input">
+              <textarea class="input1001" name="address" id="address" cols="45" rows="5"
+                placeholder="ADDRESS"></textarea>
+              <span class="focus-input100"></span>
+              <span class="symbol-input1001">
+                <i class="fa fa-home" aria-hidden="true"></i>
+              </span>
+            </div>
+            <div class="wrap-input100 validate-input" style="display: flex;">
+              
+              <input type="radio" class="input102" name="gender" id="male" value="male" />
+              <label for="male">Male</label>
+              <input type="radio" class="input102" name="gender" id="female" value="Female" />
+              <label for="female"> Female</label>
+              
+                
+            </div>
+            <div class="wrap-input100 validate-input">
+              <input class="input100" type="text" name="phone" placeholder="PHONE">
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+              </span>
+            </div>
+            {% comment %} <div class="wrap-input100 validate-input">
+              <select class="input101" type="text" name="utype" placeholder="USERTYPE">
+                <option value="admin">USERTYPE</option>
+                <option value="student">Student</option>
+                <option value="parent">Parent</option>
+              </select>
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <i class="fa fa-users" aria-hidden="true"></i>
+              </span>
+
+            </div> {% endcomment %}
+            <div class="wrap-input100 validate-input">
+              <input class="input100" type="text" name="email" placeholder="EMAIL">
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </span>
+            </div>
+
+            <!-- <tr>
+            <th scope="row">Usertype</th>
+            <td><label for="select"></label>
+              <select name="utype" id="utype">
+                <option value="admin">Admin</option>
+                <option value="user">User</option>
+                <option value="lead">Lead</option>
+              </select>
+            </td>
+          </tr> -->
+            <div class="wrap-input100 ">
+              <input class="input100" type="password" name="pword" placeholder="PASSWORD">
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <i class="fa fa-eye-slash" aria-hidden="true"></i>
+              </span>
+            </div>
+            <button class="login100-form-btn">
+              SUBMIT
+            </button>
+          </table>
+      </div>
+    </div>
+  </div>
+
+</form>
